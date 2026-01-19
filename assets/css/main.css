@@ -1491,8 +1491,6 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-
-
 .headerImg {
-  background-image: url("/assets/img/xtra/vecteezy_abstract-red-fluid-wave-background_.jpg");
+  background-image: url("../img/xtra/vecteezy_abstract-red-fluid-wave-background_.jpg");
 }
