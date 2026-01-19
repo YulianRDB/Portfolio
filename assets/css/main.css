@@ -738,7 +738,7 @@ section,
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .hero .social-links {
