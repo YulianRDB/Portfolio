@@ -34,6 +34,7 @@
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --nav-backgroundFade: #000;
   --icon-color-red: #C71414;
+  --background-color-scroll:#ffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -190,7 +191,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: #df152986;
 }
 
 /*--------------------------------------------------------------
