@@ -1494,3 +1494,8 @@ section,
 .headerImg {
   background-image: url("../img/xtra/fondo_rojo.jpg");
 }
+
+.features-item img{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
