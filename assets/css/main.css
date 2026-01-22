@@ -34,7 +34,7 @@
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --nav-backgroundFade: #000;
   --icon-color-red: #C71414;
-  --background-color-scroll:#ffff;
+  --background-color-scroll: #ffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -363,7 +363,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--icon-color-red);
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -399,7 +399,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--background-color-scroll);
   }
 
   .navmenu .active i,
@@ -1496,7 +1496,65 @@ section,
   background-image: url("../img/xtra/fondo_rojo.jpg");
 }
 
-.features-item img{
+.features-item img {
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+/* Boton parte del resumen */
+.btn-5 {
+  /* --- Propiedades Nuevas para que el enlace <a> funcione como botón --- */
+  display: inline-block;      /* Necesario para que acepte width y height */
+  text-decoration: none;      /* Quita el subrayado del enlace */
+  text-align: center;         /* Centra el texto horizontalmente */
+  color: #fff;                /* Color del texto (asumo blanco por el fondo rojo) */
+  position: relative;         /* Necesario para que los efectos ::before/::after se queden dentro */
+  cursor: pointer;            /* Manita al pasar el mouse */
+  
+  /* --- Tu CSS original --- */
+  width: 130px;
+  height: 40px;
+  line-height: 42px;          /* Centra el texto verticalmente */
+  padding: 0;
+  border: none;
+  background: rgb(255, 27, 0);
+  background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  margin-bottom: 20px;
+}
+
+/* Efecto Hover */
+.btn-5:hover {
+  color: #C71414;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Animaciones de las líneas (Igual que antes) */
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
