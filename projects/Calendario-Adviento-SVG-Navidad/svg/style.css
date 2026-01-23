@@ -1,0 +1,167 @@
+/* Galleta */
+.head {
+    fill: #cd803d;
+}
+
+.eye {
+    fill: white;
+}
+
+.mouth {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+}
+
+.limb {
+    stroke: #cd803d;
+    stroke-width: 35px;
+    stroke-linecap: round;
+}
+
+
+/* Casa */
+.house {
+    stroke: black;
+    stroke-width: 2px;
+    fill: white;
+}
+
+.house .roof {
+    fill: none;
+    stroke: #d1495b;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.house .door {
+    fill: #d1495b;
+}
+
+.house .stair {
+    fill: gray;
+}
+
+.house .window {
+    fill: #fdea96;
+}
+
+.house .window-sill {
+    fill: #d1495b;
+    stroke-linecap: round;
+}
+
+/* Regalo */
+.box {
+    fill: #d1495b;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.stripe {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.ribbon {
+    stroke: #b73a3b;
+    stroke-width: 4px;
+    fill: none;
+}
+
+
+/* Oso polar */
+.bear {
+    background-color: #f5eed7;
+}
+
+.bear .ear {
+    fill: #e5c39c;
+    stroke: white;
+    stroke-width: 5;
+}
+
+.bear .face {
+    fill: white;
+}
+
+.bear .mouth {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+}
+
+/* lampara pixar */
+.arm {
+    stroke: black;
+    stroke-width: 7;
+    stroke-linecap: round;
+}
+
+
+/* Molino de viento animado */
+#windmill-head {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Campana moviendose */
+#bell {
+    transform-origin: 0 -45px;
+}
+
+svg:hover #bell,
+svg:hover #bell-clapper {
+    animation-duration: 0.5s;
+    animation-delay: -0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-name: ring;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(-20deg);
+    }
+
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+/* Trineo con animacion */
+.sleigh {
+    offset-path: path("M-200 80 L -90 80 Q 60 80 60 -10 A 50 50 0 0 0 -60 -10 Q -60 80 90 80 L 200 80"
+        );
+    animation: roller-coaster 6000ms infinite linear;
+}
+
+@keyframes roller-coaster {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+
+/* Bombilla */
+#bulb {
+    cursor: pointer;
+}
