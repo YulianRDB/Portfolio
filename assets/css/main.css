@@ -1400,7 +1400,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px #C71414;
   padding: 20px 30px;
 }
 
@@ -1460,7 +1460,7 @@ section,
 .contact .php-email-form textarea {
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: #c714148a;
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1476,11 +1476,11 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #fff;
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
+  color: #fff;
   background: var(--accent-color);
   border: 0;
   padding: 10px 30px;
@@ -1503,33 +1503,35 @@ section,
 
 /* Boton parte del resumen */
 .btn-5 {
-  /* --- Propiedades Nuevas para que el enlace <a> funcione como botón --- */
-  display: inline-block;      /* Necesario para que acepte width y height */
-  text-decoration: none;      /* Quita el subrayado del enlace */
-  text-align: center;         /* Centra el texto horizontalmente */
-  color: #fff;                /* Color del texto (asumo blanco por el fondo rojo) */
-  position: relative;         /* Necesario para que los efectos ::before/::after se queden dentro */
-  cursor: pointer;            /* Manita al pasar el mouse */
-  
-  /* --- Tu CSS original --- */
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+
   width: 130px;
   height: 40px;
-  line-height: 42px;          /* Centra el texto verticalmente */
+  line-height: 42px;
   padding: 0;
   border: none;
-  background: rgb(255, 27, 0);
-  background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+
+  /* Fondo con tu color */
+  background: linear-gradient(0deg,
+      #C71414 0%,
+      #E02A2A 100%);
+
   margin-bottom: 20px;
 }
 
-/* Efecto Hover */
+/* Hover */
 .btn-5:hover {
   color: #C71414;
   background: transparent;
   box-shadow: none;
 }
 
-/* Animaciones de las líneas (Igual que antes) */
+/* Líneas animadas */
 .btn-5:before,
 .btn-5:after {
   content: '';
@@ -1538,11 +1540,14 @@ section,
   right: 0;
   height: 2px;
   width: 0;
-  background: #f0094a;
+
+  background: #C71414;
+
   box-shadow:
     -1px -1px 5px 0px #fff,
     7px 7px 20px 0px #0003,
     4px 4px 5px 0px #0002;
+
   transition: 400ms ease all;
 }
 
