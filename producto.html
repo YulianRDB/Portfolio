@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPA PURE IV - Tienda Oficial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">
+                <i class="bi bi-three-dots-vertical" style="transform: rotate(90deg); display:inline-block;"></i> ADIDAS
+            </a>
+            
+            <div class="d-flex gap-3 align-items-center ms-auto">
+                <a href="#" class="text-dark"><i class="bi bi-search fs-5"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-person fs-5"></i></a>
+                <a href="#" class="text-dark position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="bi bi-bag fs-5"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle" id="cartBadge" style="display:none;">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            
+            <div class="col-lg-8 px-lg-5">
+                <nav aria-label="breadcrumb" class="mb-3">
+                    <ol class="breadcrumb text-uppercase fw-bold fs-6">
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">Fútbol</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">Botas</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Copa Pure</li>
+                    </ol>
+                </nav>
+
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="bg-product p-4">
+                            <img src="assets/imgPro/1.avif" class="img-fluid mix-blend-multiply" alt="Vista Lateral">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-product p-4">
+                            <img src="assets/imgPro/2.avif" class="img-fluid mix-blend-multiply" alt="Vista Superior">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-product p-4">
+                            <img src="assets/imgPro/3.avif" class="img-fluid mix-blend-multiply" alt="Suela">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-product p-4">
+                            <img src="assets/imgPro/4.avif" class="img-fluid mix-blend-multiply" alt="Detalle">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-5 p-4 bg-light border-start border-4 border-dark">
+                    <h3 class="text-uppercase fw-bold">Toque puro. Ajuste puro.</h3>
+                    <p>La bota Copa Pure te ayuda a mantener el balón pegado al pie. Esta bota de fútbol presenta una parte superior sintética suave con detalles en relieve que te ofrecen un toque preciso. La suela versátil te permite desplegar tu mejor juego en campos de césped natural seco, tierra y césped artificial.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 pe-lg-5">
+                <div class="sticky-summary pt-3">
+                    
+                    <div class="d-flex justify-content-between text-secondary text-uppercase fw-bold" style="font-size: 0.8rem;">
+                        <span>Fútbol · Unisex</span>
+                        <span><i class="bi bi-star-fill text-dark"></i> 4.8 (320)</span>
+                    </div>
+
+                    <h1 class="display-4 product-title my-2">COPA PURE IV</h1>
+                    <div class="fs-4 fw-bold mb-3">55,00 €</div>
+                    <p class="text-secondary fw-bold">Core Black / Cloud White</p>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2 fw-bold">
+                            <span>Tallas disponibles</span>
+                            <a href="#" class="text-dark" style="font-size:0.9rem;">Guía de tallas</a>
+                        </div>
+                        
+                        <div class="row g-1">
+                            <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size39" autocomplete="off">
+                                <label class="btn btn-size" for="size39">39 ⅓</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size40" autocomplete="off">
+                                <label class="btn btn-size" for="size40">40</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size41" autocomplete="off">
+                                <label class="btn btn-size" for="size41">41 ⅓</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size42" autocomplete="off" disabled>
+                                <label class="btn btn-size disabled" for="size42">42</label>
+                            </div>
+                             <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size43" autocomplete="off">
+                                <label class="btn btn-size" for="size43">43 ⅓</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" class="btn-check" name="size" id="size44" autocomplete="off">
+                                <label class="btn btn-size" for="size44">44</label>
+                            </div>
+                        </div>
+                        <div id="sizeError" class="text-danger mt-2 small" style="display:none;">
+                            <i class="bi bi-exclamation-circle"></i> Por favor, selecciona una talla.
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mb-4">
+                        <button class="btn btn-add d-flex justify-content-between" onclick="addToCart()">
+                            <span>Añadir al carrito</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-outline-dark text-uppercase fw-bold py-3" style="border-radius:0;">
+                            <i class="bi bi-heart me-2"></i> Añadir a favoritos
+                        </button>
+                    </div>
+
+                    <div class="alert alert-success d-flex align-items-center mb-4" role="alert">
+                        <i class="bi bi-truck me-2 fs-4"></i>
+                        <div class="small fw-bold">
+                            ENVÍO GRATIS PARA MIEMBROS<br>
+                            <span class="fw-normal">Únete hoy y disfruta.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="productAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#descCollapse">
+                                    Descripción
+                                </button>
+                            </h2>
+                            <div id="descCollapse" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Horma clásica. Cierre de cordones. Parte superior sintética suave. Forro textil.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#shipCollapse">
+                                    Envíos y Devoluciones
+                                </button>
+                            </h2>
+                            <div id="shipCollapse" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Entrega estándar en 3-5 días laborables. Devoluciones gratuitas en un plazo de 60 días.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">TU CARRITO</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="emptyCartMsg" class="text-center py-5">
+                <i class="bi bi-cart-x fs-1 text-muted"></i>
+                <p class="mt-3">Tu carrito está vacío</p>
+            </div>
+            
+            <div id="cartItem" style="display:none;">
+                <div class="d-flex gap-3 mb-3">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c608f55476a84d289047af6c00f7e44a_9366/Bota_de_futbol_Copa_Pure_II_Club_cesped_natural_seco-multisuperficie_Negro_GZ2527_22_model.jpg" class="img-thumbnail" style="width: 80px; height: 80px; object-fit:cover;">
+                    <div>
+                        <h6 class="fw-bold mb-1">COPA PURE IV</h6>
+                        <small class="text-muted d-block">Negro / Blanco</small>
+                        <small class="fw-bold" id="cartSizeDisplay">Talla: --</small>
+                        <div class="fw-bold mt-1">55,00 €</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between fw-bold fs-5 mb-4">
+                    <span>Total</span>
+                    <span>55,00 €</span>
+                </div>
+                <button class="btn btn-dark w-100 py-3 text-uppercase fw-bold">Pagar Ahora <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function addToCart() {
+            // 1. Verificar si se seleccionó una talla
+            const selectedSize = document.querySelector('input[name="size"]:checked');
+            const errorMsg = document.getElementById('sizeError');
+
+            if (!selectedSize) {
+                // Mostrar error si no hay talla
+                errorMsg.style.display = 'block';
+                // Animación de sacudida (opcional)
+                return;
+            }
+            
+            errorMsg.style.display = 'none';
+
+            // 2. Simular añadir al carrito
+            const sizeValue = document.querySelector('label[for="' + selectedSize.id + '"]').innerText;
+            
+            // Actualizar datos del Offcanvas
+            document.getElementById('emptyCartMsg').style.display = 'none';
+            document.getElementById('cartItem').style.display = 'block';
+            document.getElementById('cartSizeDisplay').innerText = 'Talla: ' + sizeValue;
+            document.getElementById('cartBadge').style.display = 'block'; // Mostrar punto rojo en el icono
+
+            // 3. Abrir el Offcanvas lateral
+            const bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+            bsOffcanvas.show();
+        }
+    </script>
+</body>
+</html>
