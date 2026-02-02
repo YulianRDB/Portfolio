@@ -1493,7 +1493,7 @@ section,
 }
 
 .headerImg {
-  background-image: url("../img/xtra/fondo_rojo.jpg");
+  background-image: url("../img/xtra/fondo_rojo.webp");
 }
 
 .features-item img {
@@ -1569,41 +1569,24 @@ section,
 
 /* Pagina de producto */
 
-/* ESTILOS VISUALES PARA IMITAR LA MARCA (ADIDAS STYLE) */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #fff;
 }
 
-.display-4 {
-  color: #000;
-}
-.text-uppercase{
-  color: #000;
-}
-
-.mt-5>p{
-  color: #000;
-}
-
-/* Fotos con fondo gris claro típico */
 .bg-product {
   background-color: #EBEDEE;
 }
 
-/* El panel derecho se queda fijo al hacer scroll */
 .sticky-summary {
-  position: -webkit-sticky;
   position: sticky;
   top: 20px;
   z-index: 1020;
 }
 
-/* Estilo de los botones de talla */
 .btn-size {
   border: 1px solid #e2e3e4;
   border-radius: 0;
-  /* Cuadrados */
   font-size: 14px;
   height: 48px;
   width: 100%;
@@ -1627,11 +1610,9 @@ body {
   background-color: #f8f9fa;
   color: #dee2e6;
   text-decoration: line-through;
-  border-color: #f8f9fa;
   cursor: not-allowed;
 }
 
-/* Botón de compra grande y negro */
 .btn-add {
   background-color: black;
   color: white;
@@ -1642,12 +1623,6 @@ body {
   padding: 15px;
 }
 
-.btn-add:hover {
-  background-color: #333;
-  color: white;
-}
-
-/* Tipografía títulos */
 .product-title {
   font-weight: 900;
   text-transform: uppercase;
@@ -1655,7 +1630,6 @@ body {
   letter-spacing: -1px;
 }
 
-/* Acordeones limpios */
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   color: black;
@@ -1669,4 +1643,12 @@ body {
 .accordion-item {
   border: none;
   border-bottom: 1px solid #dee2e6;
+}
+
+.display-4, .fs-4, .text-uppercase{
+  color: #000;
+}
+
+.mt-5 > p {
+  color: #000;
 }
