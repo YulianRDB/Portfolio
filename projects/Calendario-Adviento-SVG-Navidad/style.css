@@ -29,46 +29,63 @@ body {
 }
 
 
+
 .card {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: #2c3e50;
     border-radius: 8px;
-    overflow: hidden;
     cursor: pointer;
-    perspective: 1000px;
+    perspective: 1200px;
+    transform-style: preserve-3d;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
 
 .card svg {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: contain;
-    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0.9;
+}
+
+
+.card:hover svg {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .cover {
     position: absolute;
     inset: 0;
-    background-color: #8b0000;
+    background: linear-gradient(135deg, #8b0000, #5a0000);
     color: #f5e6c8;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: 2px;
     border: 2px solid #f5e6c8;
-    z-index: 2;
+    border-radius: 8px;
+    z-index: 10;
     transform-origin: left center;
-    transition: transform 0.6s ease-in-out;
-    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(.4, 0, .2, 1);
+    backface-visibility: visible;
+
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .card:hover .cover {
-    transform: rotateY(-105deg);
+    transform: rotateY(-130deg);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .grid-horizontal {
@@ -78,6 +95,7 @@ body {
 .grid-vertical {
     grid-row: span 2;
 }
+
 
 .head {
     fill: #cd803d;
@@ -98,6 +116,7 @@ body {
     stroke-width: 35px;
     stroke-linecap: round;
 }
+
 
 .house {
     stroke: black;
@@ -128,6 +147,7 @@ body {
     fill: #d1495b;
     stroke-linecap: round;
 }
+
 
 .box {
     fill: #d1495b;
@@ -173,6 +193,7 @@ body {
     stroke-linecap: round;
 }
 
+
 #windmill-head {
     animation: rotate 4s linear infinite;
 }
@@ -187,13 +208,13 @@ body {
     }
 }
 
-#bell {
-    transform-origin: 0 -45px;
+.card:hover #bell,
+.card:hover #bell-clapper {
+    animation: ring 0.5s ease-in-out infinite alternate;
 }
 
-svg:hover #bell,
-svg:hover #bell-clapper {
-    animation: ring 0.5s ease-in-out infinite alternate;
+#bell {
+    transform-origin: 0 -45px;
 }
 
 @keyframes ring {
@@ -205,6 +226,7 @@ svg:hover #bell-clapper {
         transform: rotate(20deg);
     }
 }
+
 
 .sleigh {
     offset-path: path("M-200 80 L -90 80 Q 60 80 60 -10 A 50 50 0 0 0 -60 -10 Q -60 80 90 80 L 200 80");
@@ -220,6 +242,7 @@ svg:hover #bell-clapper {
         offset-distance: 100%;
     }
 }
+
 
 #bulb {
     cursor: pointer;
