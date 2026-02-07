@@ -1652,3 +1652,12 @@ body {
 .mt-5 > p {
   color: #000;
 }
+
+
+.detail-view{
+  color: #fff;
+}
+
+div > div > div.col-lg-4 > div > ul > li:nth-child(2) > strong > a{
+  color: #C71414;
+}
